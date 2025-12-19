@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Development - InterNetworks</title>
+    <link rel="stylesheet" href="styles.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="icon" href="ivylogo.png">
+    <style>
+        .page-hero {
+            padding: 120px 0 40px;
+            background: var(--surface)
+        }
+
+        .page-hero h1 {
+            font-size: 2.2rem;
+            margin-bottom: .5rem
+        }
+
+        .page-hero p {
+            color: var(--muted);
+            max-width: 800px
+        }
+
+        .service-overview {
+            padding: 80px 0;
+            background: #050505;
+            color: #f5f5f5
+        }
+
+        .overview-section {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 40px;
+            align-items: center
+        }
+
+        .overview-content h2 {
+            font-size: 1.75rem;
+            margin-bottom: 1rem
+        }
+
+        .overview-content p {
+            line-height: 1.8;
+            margin-bottom: 1.25rem;
+            color: #d9d9d9
+        }
+
+        .overview-eyebrow {
+            letter-spacing: .2em;
+            font-size: .9rem;
+            text-transform: uppercase;
+            margin-bottom: 1rem;
+            color: #8fd98b;
+            font-weight: 600
+        }
+
+        .overview-list {
+            list-style: none;
+            padding: 0;
+            margin: 1.5rem 0 0 0;
+            display: flex;
+            flex-direction: column;
+            gap: .75rem;
+            color: #dfe6e2
+        }
+
+        .overview-list li {
+            display: flex;
+            gap: .5rem
+        }
+
+        .overview-list li::before {
+            content: '•';
+            color: #8fd98b;
+            font-size: 1.2rem;
+            line-height: 1.2rem
+        }
+
+        .overview-image {
+            background: #0f1c14;
+            padding: 12px;
+            border-radius: 28px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, .45)
+        }
+
+        .overview-image img {
+            width: 100%;
+            height: 100%;
+            display: block;
+            border-radius: 20px;
+            object-fit: cover
+        }
+
+        .service-detail {
+            padding: 60px 0 80px
+        }
+
+        .service-header {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            margin-bottom: 20px
+        }
+
+        .service-header .icon {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: transparent
+        }
+
+        .service-header .icon i {
+            font-size: 2rem;
+            color: var(--primary-3);
+        }
+
+        .service-card {
+            background: var(--surface);
+            border: 1px solid rgba(87, 196, 106, .12);
+            border-radius: 16px;
+            box-shadow: 0 12px 40px rgba(0, 0, 0, .06);
+            padding: 24px
+        }
+
+        .service-card h2 {
+            font-size: 1.4rem;
+            margin-bottom: .75rem
+        }
+
+        .service-card p {
+            color: var(--muted);
+            line-height: 1.8
+        }
+
+        .back-home {
+            display: inline-block;
+            margin-top: 20px;
+            text-decoration: none;
+            color: var(--primary-3);
+            font-weight: 600
+        }
+    </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => { window.scrollTo(0, 0) });
+    </script>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html#home" class="nav-logo" aria-label="InterNetworks home">
+                <img src="ivylogo.png" alt="InterNetworks logo" class="logo-img">
+            </a>
+            <ul class="nav-menu">
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li class="has-dropdown">
+                    <a href="index.html#services">Services</a>
+                    <ul class="dropdown">
+                        <li><a href="consulting.html">Consulting Excellence</a></li>
+                        <li><a href="augmentation.html">Staff Augmentation</a></li>
+                        <li><a href="prompt.html">Prompt Engineering</a></li>
+                        <li><a href="business-development.html">Business Development</a></li>
+                        <li><a href="autocad.html">AutoCAD Drafting & Data Publishing</a></li>
+                    </ul>
+                </li>
+                <li><a href="index.html#focus">Focus</a></li>
+                <li><a href="index.html#process">Process</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger"><span></span><span></span><span></span></div>
+        </div>
+    </nav>
+
+    <section class="page-hero">
+        <div class="container">
+            <h1>Business Development</h1>
+            <p>We build and manage your outbound sales pipeline. Our BDRs find, qualify, and engage the right prospects, so your sales team closes faster.</p>
+        </div>
+    </section>
+
+    <section class="service-overview">
+        <div class="container overview-section">
+            <div class="overview-content">
+                <p class="overview-eyebrow">Overview</p>
+                <h2>Pipeline That Converts</h2>
+                <p>Our Business Development service transforms your outbound sales process by deploying dedicated BDRs who specialize in prospecting, qualification, and engagement. We handle the entire pipeline from initial outreach to qualified handoff, ensuring your sales team spends time closing deals, not searching for leads.</p>
+                <h3>What we are good at:</h3>
+                <ul class="overview-list">
+                    <li>Targeted prospecting using data-driven research and industry insights.</li>
+                    <li>Multi-channel outreach strategies that maximize response rates.</li>
+                    <li>Lead qualification frameworks that ensure only high-intent prospects reach your sales team.</li>
+                    <li>Pipeline management and reporting that gives you visibility into every stage of the funnel.</li>
+                </ul>
+            </div>
+            <div class="overview-image">
+                <img src="home.png" alt="Business Development">
+            </div>
+        </div>
+    </section>
+
+    <section class="service-detail">
+        <div class="container">
+            <div class="service-header">
+                <div class="icon"><i class="fas fa-briefcase"></i></div>
+                <div>
+                    <h2>Accelerate Your Sales Cycle</h2>
+                    <p>Our BDRs find, qualify, and engage the right prospects, so your sales team closes faster.</p>
+                </div>
+            </div>
+            <div class="service-card">
+                <h2>What You Get</h2>
+                <p>Dedicated BDRs, comprehensive prospecting, multi-channel outreach, lead qualification, pipeline management, and regular reporting to keep you informed every step of the way.</p>
+                <a class="back-home" href="index.html#services">← Back to Services</a>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
+

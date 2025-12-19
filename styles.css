@@ -610,7 +610,7 @@ body {
 }
 
 .hero-logo.big {
-    height: 420px;
+    height: 520px;
     max-width: 100%;
     width: auto;
     display: block;
@@ -878,7 +878,7 @@ body {
 
 .service-item .service-icon i {
     font-size: 1.8rem;
-    color: white;
+    color: var(--primary-3);
 }
 
 .service-item .service-icon img {
@@ -1283,7 +1283,7 @@ body {
     }
 
     .hero-logo {
-        height: 140px;
+        height: 320px;
     }
 
     .hero-description {

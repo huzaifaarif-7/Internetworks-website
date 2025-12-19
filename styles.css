@@ -630,14 +630,15 @@ body {
 }
 
 .hero-tagline {
-    font-size: 1.5rem;
-    font-weight: 300;
+    font-size: 2rem;
+    font-weight: 700;
     margin-bottom: .75rem;
     color: #2c8a4d;
 }
 
 .hero-description {
-    font-size: 1.1rem;
+    font-size: 1.4rem;
+    font-weight: 700;
     margin-bottom: 1.6rem;
     opacity: 0.9;
     max-width: 600px;

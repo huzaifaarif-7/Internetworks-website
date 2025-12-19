@@ -1,30 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Prompt Engineering - InterNetworks</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="icon" href="ivylogo.png">
     <style>
-        .page-hero{padding:120px 0 40px;background:var(--surface)}
-        .page-hero h1{font-size:2.2rem;margin-bottom:.5rem}
-        .page-hero p{color:var(--muted);max-width:800px}
-        .service-detail{padding:40px 0 80px}
-        .service-header{display:flex;align-items:center;gap:16px;margin-bottom:20px}
-        .service-header .icon{width:70px;height:70px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:transparent}
-        .service-header .icon img{width:44px;height:44px;object-fit:contain;display:block}
-        .service-card{background:var(--surface);border:1px solid rgba(87,196,106,.12);border-radius:16px;box-shadow:0 12px 40px rgba(0,0,0,.06);padding:24px}
-        .service-card h2{font-size:1.4rem;margin-bottom:.75rem}
-        .service-card p{color:var(--muted);line-height:1.8}
-        .back-home{display:inline-block;margin-top:20px;text-decoration:none;color:var(--primary-3);font-weight:600}
+        .page-hero {
+            padding: 120px 0 40px;
+            background: var(--surface)
+        }
+
+        .page-hero h1 {
+            font-size: 2.2rem;
+            margin-bottom: .5rem
+        }
+
+        .page-hero p {
+            color: var(--muted);
+            max-width: 800px
+        }
+
+        .service-overview {
+            padding: 80px 0;
+            background: #050505;
+            color: #f5f5f5
+        }
+
+        .overview-section {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 40px;
+            align-items: center
+        }
+
+        .overview-content h2 {
+            font-size: 1.75rem;
+            margin-bottom: 1rem
+        }
+
+        .overview-content p {
+            line-height: 1.8;
+            margin-bottom: 1.25rem;
+            color: #d9d9d9
+        }
+
+        .overview-eyebrow {
+            letter-spacing: .2em;
+            font-size: .9rem;
+            text-transform: uppercase;
+            margin-bottom: 1rem;
+            color: #8fd98b;
+            font-weight: 600
+        }
+
+        .overview-list {
+            list-style: none;
+            padding: 0;
+            margin: 1.5rem 0 0 0;
+            display: flex;
+            flex-direction: column;
+            gap: .75rem;
+            color: #dfe6e2
+        }
+
+        .overview-list li {
+            display: flex;
+            gap: .5rem
+        }
+
+        .overview-list li::before {
+            content: '•';
+            color: #8fd98b;
+            font-size: 1.2rem;
+            line-height: 1.2rem
+        }
+
+        .overview-image {
+            background: #0f1c14;
+            padding: 12px;
+            border-radius: 28px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, .45)
+        }
+
+        .overview-image img {
+            width: 100%;
+            height: 100%;
+            display: block;
+            border-radius: 20px;
+            object-fit: cover
+        }
+
+        .service-detail {
+            padding: 60px 0 80px
+        }
+
+        .service-header {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            margin-bottom: 20px
+        }
+
+        .service-header .icon {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: transparent
+        }
+
+        .service-header .icon img {
+            width: 44px;
+            height: 44px;
+            object-fit: contain;
+            display: block
+        }
+
+        .service-card {
+            background: var(--surface);
+            border: 1px solid rgba(87, 196, 106, .12);
+            border-radius: 16px;
+            box-shadow: 0 12px 40px rgba(0, 0, 0, .06);
+            padding: 24px
+        }
+
+        .service-card h2 {
+            font-size: 1.4rem;
+            margin-bottom: .75rem
+        }
+
+        .service-card p {
+            color: var(--muted);
+            line-height: 1.8
+        }
+
+        .back-home {
+            display: inline-block;
+            margin-top: 20px;
+            text-decoration: none;
+            color: var(--primary-3);
+            font-weight: 600
+        }
     </style>
     <script>
-        document.addEventListener('DOMContentLoaded',()=>{window.scrollTo(0,0)});
+        document.addEventListener('DOMContentLoaded', () => { window.scrollTo(0, 0) });
     </script>
 </head>
+
 <body>
     <nav class="navbar">
         <div class="nav-container">
@@ -40,6 +172,8 @@
                         <li><a href="consulting.html">Consulting Excellence</a></li>
                         <li><a href="augmentation.html">Staff Augmentation</a></li>
                         <li><a href="prompt.html">Prompt Engineering</a></li>
+                        <li><a href="business-development.html">Business Development</a></li>
+                        <li><a href="autocad.html">AutoCAD Drafting & Data Publishing</a></li>
                     </ul>
                 </li>
                 <li><a href="index.html#focus">Focus</a></li>
@@ -53,7 +187,28 @@
     <section class="page-hero">
         <div class="container">
             <h1>Prompt Engineering</h1>
-            <p>We’re taking AI solutions to the next level with precise, effective prompts for workflows, conversational AI, and customer engagement.</p>
+            <p>Designing reliable prompts that keep your AI initiatives precise, safe, and aligned with business goals.</p>
+        </div>
+    </section>
+
+    <section class="service-overview">
+        <div class="container overview-section">
+            <div class="overview-content">
+                <p class="overview-eyebrow">Overview</p>
+                <h2>Operationalizing High-Quality Prompts</h2>
+                <p>Our Prompt Engineering service helps businesses unlock the full potential of AI by designing, optimizing, and integrating high-quality prompts that deliver accurate, consistent, and task-specific results across various applications.</p>
+                <p>We craft custom prompts for chatbots, content generation, data analysis, workflow automation, and customer support, while also refining existing prompts to improve clarity, reduce errors, and enhance overall performance. By aligning AI model behavior with your business goals, we ensure smoother operations, smarter automation, and more reliable outputs, ultimately enabling your organization to work more efficiently and make better data-driven decisions.</p>
+                <h3>What we are good at:</h3>
+                <ul class="overview-list">
+                    <li>Prompt libraries tuned for conversational AI, creative assets, and analytics tooling.</li>
+                    <li>Evaluation harnesses that measure accuracy, hallucination risk, and latency.</li>
+                    <li>Guardrails, escalation paths, and workflow orchestration for safe automation.</li>
+                    <li>Enablement sessions so your teams can iterate prompts with confidence.</li>
+                </ul>
+            </div>
+            <div class="overview-image">
+                <img src="home.png" alt="Prompt engineering dashboards">
+            </div>
         </div>
     </section>
 
@@ -68,11 +223,13 @@
             </div>
             <div class="service-card">
                 <h2>What You Get</h2>
-                <p>Use‑case analysis, structured prompt patterns, evaluation harnesses, safety guardrails, and iteration loops that improve outcomes over time.</p>
+                <p>Use-case analysis, structured prompt patterns, evaluation harnesses, safety guardrails, and iteration loops that improve outcomes over time.</p>
                 <a class="back-home" href="index.html#services">← Back to Services</a>
             </div>
         </div>
     </section>
 </body>
+
 </html>
+
 

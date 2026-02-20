@@ -107,6 +107,18 @@ body {
     cursor: pointer;
 }
 
+.nav-ask>a {
+    padding: 8px 18px;
+    border-radius: 999px;
+    background: linear-gradient(45deg, var(--primary), var(--primary-2));
+    color: #0b1410;
+    box-shadow: 0 4px 12px rgba(143, 217, 139, 0.35);
+    font-weight: 600;
+}
+
+.nav-ask>a::after {
+    display: none;
+}
 /* Navbar dropdown */
 .nav-menu li {
     position: relative;

@@ -994,6 +994,24 @@ body {
     font-size: 0.95rem;
 }
 
+.review-links {
+    margin-top: 0.5rem;
+    display: flex;
+    gap: 0.5rem;
+}
+
+.review-links a {
+    color: var(--primary-3);
+    font-size: 1.1rem;
+    transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.review-links a:hover {
+    color: var(--primary-2);
+    transform: translateY(-1px);
+}
+
+
 /* Focus Section */
 .focus {
     padding: 100px 0;

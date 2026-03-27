@@ -1011,6 +1011,69 @@ body {
     transform: translateY(-1px);
 }
 
+/* Recommendation Section */
+.recommendation {
+    padding: 90px 0;
+    background: linear-gradient(180deg, #f7fbf8 0%, #ffffff 100%);
+}
+
+.recommendation-card {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 2rem;
+    align-items: start;
+    background: #ffffff;
+    border: 1px solid rgba(87, 196, 106, 0.2);
+    border-radius: 18px;
+    padding: 2rem;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+}
+
+.recommendation-photo img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.16);
+}
+
+.recommendation-quote {
+    color: var(--text);
+    line-height: 1.75;
+    margin-bottom: 1rem;
+    font-size: 1.03rem;
+}
+
+.recommendation-author {
+    margin-top: 1.25rem;
+}
+
+.recommendation-author h4 {
+    font-size: 1.25rem;
+    color: var(--primary-3);
+    margin-bottom: 0.2rem;
+}
+
+.recommendation-author span {
+    color: var(--muted);
+    font-size: 1rem;
+}
+
+.recommendation-links {
+    margin-top: 0.75rem;
+}
+
+.recommendation-links a {
+    color: #0a66c2;
+    font-size: 1.35rem;
+    transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.recommendation-links a:hover {
+    color: #004182;
+    transform: translateY(-1px);
+}
+
 
 /* Focus Section */
 .focus {

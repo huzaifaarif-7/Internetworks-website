@@ -1019,7 +1019,7 @@ body {
 
 .recommendation-card {
     display: grid;
-    grid-template-columns: 190px 1fr;
+    grid-template-columns: 170px 1fr;
     gap: 2rem;
     align-items: start;
     background: #ffffff;
@@ -1030,7 +1030,7 @@ body {
 }
 
 .recommendation-photo img {
-    width: 80%;
+    width: 70%;
     aspect-ratio: 1 / 1;
     object-fit: cover;
     border-radius: 16px;

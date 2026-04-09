@@ -1,3 +1,4 @@
+/* Reset and Base Styles */
 * {
     margin: 0;
     padding: 0;
@@ -123,6 +124,7 @@ body {
 .nav-ask>a:hover {
     color: var(--primary-3);
 }
+
 /* Navbar dropdown */
 .nav-menu li {
     position: relative;
@@ -699,7 +701,6 @@ body {
     transform: translateY(-3px);
     box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
     color: var(--primary-3);
-
 }
 
 /* Robot CTA styles */
@@ -1019,7 +1020,7 @@ body {
 
 .recommendation-card {
     display: grid;
-    grid-template-columns: 170px 1fr;
+    grid-template-columns: 220px 1fr;
     gap: 2rem;
     align-items: start;
     background: #ffffff;
@@ -1030,11 +1031,13 @@ body {
 }
 
 .recommendation-photo img {
-    width: 70%;
+    width: 92%;
     aspect-ratio: 1 / 1;
     object-fit: cover;
     border-radius: 16px;
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.16);
+    display: block;
+    margin: 0 auto;
 }
 
 .recommendation-quote {
@@ -1042,6 +1045,8 @@ body {
     line-height: 1.75;
     margin-bottom: 1rem;
     font-size: 1.03rem;
+    overflow-wrap: anywhere;
+    word-break: break-word;
 }
 
 .recommendation-author {
@@ -1073,7 +1078,6 @@ body {
     color: #004182;
     transform: translateY(-1px);
 }
-
 
 /* Focus Section */
 .focus {
@@ -1366,6 +1370,10 @@ body {
         margin: 1rem 0;
     }
 
+    .nav-menu a {
+        color: #ffffff;
+    }
+
     .hamburger.active span:nth-child(2) {
         opacity: 0;
     }
@@ -1419,6 +1427,15 @@ body {
     .focus-slide {
         flex-basis: 92%;
         max-width: 92%;
+    }
+
+    .recommendation-card {
+        grid-template-columns: 1fr;
+        overflow: hidden;
+    }
+
+    .recommendation-photo {
+        max-width: 220px;
     }
 
     .services-grid {

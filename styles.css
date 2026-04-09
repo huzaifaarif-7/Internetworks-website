@@ -102,6 +102,10 @@ body {
     width: 100%;
 }
 
+.nav-menu .nav-ask>a {
+        color: #000000;
+    }
+
 .hamburger {
     display: none;
     flex-direction: column;
